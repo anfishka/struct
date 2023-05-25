@@ -8,7 +8,7 @@ void print_students(vector<STUDENT>& students)
 {
 	for (auto& student : students)
 	{
-		cout << "Student: " << student.lastName << "\n" << "Group: " << student.group << "\n" << "Progress: ";
+		cout << "\nStudent: " << student.lastName << "\n" << "Group: " << student.group << "\n" << "Progress: \n";
 		for (int i = 0; i < 5; i++)
 		{
 			cout << student.progress[i] << " ";

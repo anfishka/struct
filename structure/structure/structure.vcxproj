@@ -131,6 +131,7 @@
     <ClCompile Include="change_db_students.cpp" />
     <ClCompile Include="db_students.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu_man.cpp" />
     <ClCompile Include="menu_student.cpp" />
     <ClCompile Include="print_best_students.cpp" />
     <ClCompile Include="print_students.cpp" />
@@ -141,6 +142,7 @@
     <ClInclude Include="change_db_students.h" />
     <ClInclude Include="db_students.h" />
     <ClInclude Include="man.h" />
+    <ClInclude Include="menu_man.h" />
     <ClInclude Include="menu_student.h" />
     <ClInclude Include="print_best_students.h" />
     <ClInclude Include="print_students.h" />

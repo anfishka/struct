@@ -2,6 +2,6 @@
 #define PRINT_STUDENTS_H
 using namespace std;
 
-void print_students(vector<STUDENT>& students);
+void print_students(std::vector<STUDENT>& students);
 
 #endif

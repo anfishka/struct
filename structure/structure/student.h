@@ -3,12 +3,11 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
 
 struct STUDENT 
 {
-	string lastName;
-	string group;
+	std::string lastName;
+	std::string group;
 	int progress[5];
 };
 

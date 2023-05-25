@@ -9,7 +9,7 @@
 #include "menu_student.h"
 using namespace std;
 
-void delete_student(vector<STUDENT>& db_students)
+void delete_student(std::vector<STUDENT>& db_students)
 {
 	if (db_students.empty()) {
 		cout << "The student database is empty." << endl;
@@ -20,13 +20,12 @@ void delete_student(vector<STUDENT>& db_students)
 	string lastName;
 	cin >> lastName;
 
-	// »щем студента с указанной фамилией
-	auto it = find_if(db_students.begin(), db_students.end(), [&](const STUDENT& student) {
+	auto it = find_if(db_students.begin(), db_students.end(), [&](STUDENT& student) {
 		return student.lastName == lastName;
 		});
 
 	if (it != db_students.end()) {
-		// ”дал€ем студента из вектора
+
 		db_students.erase(it);
 		cout << "Student \"" << lastName << "\" has been deleted." << endl;
 	}
@@ -35,23 +34,23 @@ void delete_student(vector<STUDENT>& db_students)
 	}
 }
 
-void change_db_students(vector <STUDENT>& db_students)
+void change_db_students(std::vector <STUDENT>& db_students)
 {
 	int choice;
 	STUDENT stud;
 	do
 	{
-		cout << "\nChoose an action:\n1 - Add student\n2 - Delete student\n3 - Exit\n";
+		cout << "\n\x1b[34mChoose an action:\n1 - Add student\n2 - Delete student\n3 - Exit\n";
 		cin >> choice;
 
 		switch (choice)
 		{
 		case 1:
-			cout << "Enter last name of student: ";
+			cout << "\nEnter last name of student: ";
 			cin >> stud.lastName;
-			cout << "Enter group of student: ";
+			cout << "\nEnter group of student: ";
 			cin >> stud.group;
-			cout << "Enter 5 grades of student: (ATTENTION! ENTER JUST ONE GRADE, THEN PRESS ENTER, MAKE IT 5 TIMES!)";
+			cout << "\nEnter 5 grades of student: (ATTENTION! ENTER JUST ONE GRADE, THEN PRESS ENTER, MAKE IT 5 TIMES!)";
 			for (int i = 0; i < 5; i++)
 			{
 				cin >> stud.progress[i];
@@ -61,6 +60,7 @@ void change_db_students(vector <STUDENT>& db_students)
 			break;	
 		case 2:
 			delete_student(db_students);
+			break;
 		case 3:
 			return;
 		}

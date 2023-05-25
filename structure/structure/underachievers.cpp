@@ -6,7 +6,7 @@ using namespace std;
 
 void print_under_achievers(vector<STUDENT>& students)
 {
-	cout << "Underachievers: \n";
+	cout << "\nUnderachievers: \n";
 	for (auto& student : students)
 	{
 		float average_grade = calc_average(student.progress, 5);

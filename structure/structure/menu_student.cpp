@@ -15,7 +15,7 @@ void menu_student()
 	vector<STUDENT> students = db_students();
 	do
 	{
-		cout << "Choose an action, that you want to do: \n\n1 - Print list of students\n2 - Print a list of the best students\n3 - Print a list with underachievers\n4 - Change database of students\n5 - Exit\n";
+		cout << "\n\x1b[33mChoose an action, that you want to do: \n\n1 - Print list of students\n2 - Print a list of the best students\n3 - Print a list with underachievers\n4 - Change database of students\n5 - Exit\n";
 		cin >> choice;
 		
 		switch (choice)

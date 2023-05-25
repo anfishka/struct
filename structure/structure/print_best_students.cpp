@@ -7,7 +7,7 @@ using namespace std;
 
 void print_best_students(vector<STUDENT>& students)
 {
-	cout << "Best Students: \n";
+	cout << "\nBest Students: \n";
 	for (auto& student : students)
 	{
 

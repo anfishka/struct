@@ -3,9 +3,9 @@
 #include "student.h"
 using namespace std;
 
-vector<STUDENT> db_students()
+std::vector<STUDENT> db_students()
 {
-	vector<STUDENT> students;
+	std::vector<STUDENT> students;
 	STUDENT student_1 = { "Voronin" , "BR_18", {10,4,2,10,3} };
 	students.push_back(student_1);
 	STUDENT student_2 = { "Kanin", "BR_17",  {10,5,2,2,3} };
